@@ -374,3 +374,19 @@ details p{color:var(--muted);margin:0 0 16px}
 .mo .nav a[aria-current="page"]{animation:navIn .6s cubic-bezier(.3,1.5,.5,1) .2s both}
 @keyframes navIn{from{transform:scale(.7);opacity:.3}}
 }
+
+/* how it works: 5 step invite process (Oct 29) */
+.steps-5{counter-reset:none}
+.process-note{font-size:1rem;color:var(--ink);font-weight:600;max-width:620px;margin:26px auto 0}
+.process-cta{margin-top:18px}
+@media (min-width:760px){
+  .steps-5{grid-template-columns:repeat(6,1fr)}
+  .steps-5 li{grid-column:span 2}
+  .steps-5 li:nth-child(4),.steps-5 li:nth-child(5){grid-column:span 3}
+}
+@media (min-width:1020px){
+  .steps-5{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+  .steps-5 li,.steps-5 li:nth-child(4),.steps-5 li:nth-child(5){grid-column:auto;padding:68px 18px 20px}
+  .steps-5 h3{font-size:1.05rem}
+  .steps-5 p{font-size:.93rem}
+}
