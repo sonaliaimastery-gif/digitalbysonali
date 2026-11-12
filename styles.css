@@ -390,3 +390,7 @@ details p{color:var(--muted);margin:0 0 16px}
   .steps-5 h3{font-size:1.05rem}
   .steps-5 p{font-size:.93rem}
 }
+
+/* Nov 12: mobile menu wraps to two rows so all 7 items fit (no sideways scroll) */
+.nav-mob-in{flex-wrap:wrap;justify-content:center;overflow-x:visible;row-gap:2px}
+.nav-mob a{font-size:.8rem;padding:6px 9px}
